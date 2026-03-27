@@ -185,6 +185,8 @@ Without TTL extension, critical data could silently expire:
 
 The automatic TTL extension ensures that all data remains accessible as long as the contract is actively used, preventing data loss and maintaining system integrity.
 
+For a detailed breakdown of all storage keys and our extension strategy, see [docs/ttl-strategy.md](docs/ttl-strategy.md).
+
 ## 🌍 Why This Matters
 
 **The Problem — Information Asymmetry in Asset Financing:**
