@@ -18,7 +18,7 @@
                   "symbol": "GENSET"
                 },
                 {
-                  "string": "Spec A"
+                  "string": "Asset Alpha"
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
@@ -40,10 +40,10 @@
               "function_name": "register_asset",
               "args": [
                 {
-                  "symbol": "GENSET"
+                  "symbol": "TURBINE"
                 },
                 {
-                  "string": "Spec B"
+                  "string": "Asset Beta"
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
@@ -125,7 +125,7 @@
                         "symbol": "metadata"
                       },
                       "val": {
-                        "string": "Spec A"
+                        "string": "Asset Alpha"
                       }
                     },
                     {
@@ -211,7 +211,7 @@
                         "symbol": "asset_type"
                       },
                       "val": {
-                        "symbol": "GENSET"
+                        "symbol": "TURBINE"
                       }
                     },
                     {
@@ -219,7 +219,7 @@
                         "symbol": "metadata"
                       },
                       "val": {
-                        "string": "Spec B"
+                        "string": "Asset Beta"
                       }
                     },
                     {
@@ -268,7 +268,7 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "bytes": "58bcfb4ebc730e4bfc7e826a21427e75740b2477e0c3fadbd89b71027f1a80d1"
+                  "bytes": "c86f0e9c0dd8ec0d69b29235d0d8a925548466a0915b16d25f321ede3b48b7af"
                 }
               ]
             },
@@ -291,13 +291,13 @@
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                     },
                     {
-                      "bytes": "58bcfb4ebc730e4bfc7e826a21427e75740b2477e0c3fadbd89b71027f1a80d1"
+                      "bytes": "c86f0e9c0dd8ec0d69b29235d0d8a925548466a0915b16d25f321ede3b48b7af"
                     }
                   ]
                 },
                 "durability": "persistent",
                 "val": {
-                  "u64": 2
+                  "u64": 1
                 }
               }
             },
@@ -319,7 +319,7 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "bytes": "fbb66f0c342d282c6cf422237fafe0559061984f4973f1fc61a8835dfdd65f93"
+                  "bytes": "e7fb55f11762320b5158e118dec22ab3735ee8e63ca3216dfba0fc23be06d564"
                 }
               ]
             },
@@ -342,13 +342,13 @@
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                     },
                     {
-                      "bytes": "fbb66f0c342d282c6cf422237fafe0559061984f4973f1fc61a8835dfdd65f93"
+                      "bytes": "e7fb55f11762320b5158e118dec22ab3735ee8e63ca3216dfba0fc23be06d564"
                     }
                   ]
                 },
                 "durability": "persistent",
                 "val": {
-                  "u64": 1
+                  "u64": 2
                 }
               }
             },

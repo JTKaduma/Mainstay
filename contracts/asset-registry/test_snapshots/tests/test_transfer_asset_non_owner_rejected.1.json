@@ -105,6 +105,14 @@
                     },
                     {
                       "key": {
+                        "symbol": "metadata_updated_at"
+                      },
+                      "val": {
+                        "u64": 0
+                      }
+                    },
+                    {
+                      "key": {
                         "symbol": "owner"
                       },
                       "val": {
@@ -186,7 +194,7 @@
             "key": {
               "vec": [
                 {
-                  "symbol": "OWN_AST"
+                  "symbol": "OWN_IDX"
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
@@ -206,7 +214,7 @@
                 "key": {
                   "vec": [
                     {
-                      "symbol": "OWN_AST"
+                      "symbol": "OWN_IDX"
                     },
                     {
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
@@ -225,7 +233,7 @@
             },
             "ext": "v0"
           },
-          4095
+          518400
         ]
       ],
       [

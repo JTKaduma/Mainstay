@@ -51,7 +51,6 @@ fn dedup_key(owner: &Address, hash: &BytesN<32>) -> (Symbol, Address, BytesN<32>
 fn owner_index_key(owner: &Address) -> (Symbol, Address) {
     (symbol_short!("OWN_IDX"), owner.clone())
 }
-#121 
 /// Append an asset ID to the owner's index.
 fn owner_index_add(env: &Env, owner: &Address, asset_id: u64) {
     let key = owner_index_key(owner);
@@ -139,14 +138,6 @@ impl AssetRegistry {
 
     pub fn asset_count(env: Env) -> u64 {
         env.storage().instance().get(&ASSET_COUNT).unwrap_or(0)
-    }
-
-    /// Returns all asset IDs owned by the given address.
-    pub fn get_assets_by_owner(env: Env, owner: Address) -> Vec<u64> {
-        env.storage()
-            .persistent()
-            .get(&owner_assets_key(&owner))
-            .unwrap_or(Vec::new(&env))
     }
 
     /// Initialize the admin address (call once on deploy)
@@ -294,8 +285,8 @@ mod tests {
     use super::*;
     use soroban_sdk::{
         symbol_short,
-        testutils::{Address as _, Events},
-        Bytes, Env, String, Vec,
+        testutils::{Address as _, Events, Ledger},
+        Bytes, Env, String,
     };
     use soroban_sdk::testutils::storage::Persistent;
 

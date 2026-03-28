@@ -1,6 +1,6 @@
 {
   "generators": {
-    "address": 2,
+    "address": 3,
     "nonce": 0
   },
   "auth": [
@@ -18,7 +18,7 @@
                   "symbol": "GENSET"
                 },
                 {
-                  "string": "Spec A"
+                  "string": "CAT-3516"
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
@@ -37,16 +37,16 @@
           "function": {
             "contract_fn": {
               "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "register_asset",
+              "function_name": "transfer_asset",
               "args": [
                 {
-                  "symbol": "GENSET"
-                },
-                {
-                  "string": "Spec B"
+                  "u64": 1
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                 }
               ]
             }
@@ -55,6 +55,7 @@
         }
       ]
     ],
+    [],
     []
   ],
   "ledger": {
@@ -125,7 +126,7 @@
                         "symbol": "metadata"
                       },
                       "val": {
-                        "string": "Spec A"
+                        "string": "CAT-3516"
                       }
                     },
                     {
@@ -141,101 +142,7 @@
                         "symbol": "owner"
                       },
                       "val": {
-                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "registered_at"
-                      },
-                      "val": {
-                        "u64": 0
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          518400
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "ASSET"
-                },
-                {
-                  "u64": 2
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "ASSET"
-                    },
-                    {
-                      "u64": 2
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "map": [
-                    {
-                      "key": {
-                        "symbol": "asset_id"
-                      },
-                      "val": {
-                        "u64": 2
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "asset_type"
-                      },
-                      "val": {
-                        "symbol": "GENSET"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "metadata"
-                      },
-                      "val": {
-                        "string": "Spec B"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "metadata_updated_at"
-                      },
-                      "val": {
-                        "u64": 0
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "owner"
-                      },
-                      "val": {
-                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                       }
                     },
                     {
@@ -265,10 +172,10 @@
                   "symbol": "DEDUP"
                 },
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                 },
                 {
-                  "bytes": "58bcfb4ebc730e4bfc7e826a21427e75740b2477e0c3fadbd89b71027f1a80d1"
+                  "bytes": "931ba7e7bca61b41b271f75bd65b4c29ba79fd9e7a2eec32823cc2f1c53dc008"
                 }
               ]
             },
@@ -288,61 +195,10 @@
                       "symbol": "DEDUP"
                     },
                     {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                     },
                     {
-                      "bytes": "58bcfb4ebc730e4bfc7e826a21427e75740b2477e0c3fadbd89b71027f1a80d1"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "u64": 2
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "DEDUP"
-                },
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                },
-                {
-                  "bytes": "fbb66f0c342d282c6cf422237fafe0559061984f4973f1fc61a8835dfdd65f93"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "DEDUP"
-                    },
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                    },
-                    {
-                      "bytes": "fbb66f0c342d282c6cf422237fafe0559061984f4973f1fc61a8835dfdd65f93"
+                      "bytes": "931ba7e7bca61b41b271f75bd65b4c29ba79fd9e7a2eec32823cc2f1c53dc008"
                     }
                   ]
                 },
@@ -393,12 +249,54 @@
                 },
                 "durability": "persistent",
                 "val": {
+                  "vec": []
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          518400
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "OWN_IDX"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "OWN_IDX"
+                    },
+                    {
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
                   "vec": [
                     {
                       "u64": 1
-                    },
-                    {
-                      "u64": 2
                     }
                   ]
                 }
@@ -437,7 +335,7 @@
                           "symbol": "A_COUNT"
                         },
                         "val": {
-                          "u64": 2
+                          "u64": 1
                         }
                       }
                     ]
